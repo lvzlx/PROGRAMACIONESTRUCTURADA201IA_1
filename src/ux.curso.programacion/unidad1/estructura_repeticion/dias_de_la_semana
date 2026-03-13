@@ -1,0 +1,47 @@
+#Implementacion de Match en Python
+
+"""
+La funcion te dira que dia de la semana es 
+"""
+def semana():
+    print("-- Ejemplo de match --")
+    opcion = input("Ingrese una opcion (1-7): ")
+
+    match opcion:
+        case "1":
+            print("Opcion 1 seleccionada")
+            dia1 = input("Ingrese el dia de la semana")
+            print(f"Hola, es {dia1}!")
+        case "2":
+            print("Opcion 2 seleccionada")
+            dia2 = input("Ingrese el dia de la semana")
+            print(f"Hola, es {dia2}")
+        case "3":
+            print("Opcion 3 seleccionada")
+            dia3 = input("Ingrese el dia de la semana")
+            print(f"Hola, es {dia3}")
+        case "4":
+            print("Opcion 4 seleccionada")
+            dia4 = input("Ingrese el dia de la semana")
+            print(f"Hola, es {dia4}")
+        case "5":
+            print("opcion 5 seleccionada")
+            dia5= input("Ingrese el dia de la semana")
+            print(f"Hola, es {dia5}")
+        case "6":
+            print("Opcion 6 seleccionada")
+            dia6= input("Ingrese el dia de la semana")
+            print(f"Hola, es {dia6}")
+        case "7":
+            print("opcion 7 seleccionada")
+            dia7= input("Ingrese el dia de la semana")
+            print(f"Hola, es {dia7}")
+
+        case _:
+            print("Opcion no valida")
+
+def main():
+    semana()
+
+if __name__ == "__main__":
+    main()
