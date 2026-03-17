@@ -1,6 +1,6 @@
 import math
 
-#demostracion del uso de math
+# Demostracion del uso de math
 
 def mostrar_funciones_math(numero):
     #crear variable
