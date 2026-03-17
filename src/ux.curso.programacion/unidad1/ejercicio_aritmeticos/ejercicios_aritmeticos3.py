@@ -7,7 +7,9 @@ def mostrar_funciones_math(numero):
 
     sen_x = math.sin(numero)
     conse_x = math.cos(numero)
+    tan_x= math.tan(numero)
 
+    print("la tangente de", numero, "es =", tan_x)
     print("el seno de", numero, "es =", sen_x)
     print("el coseno de", numero, "es =", conse_x)
 
