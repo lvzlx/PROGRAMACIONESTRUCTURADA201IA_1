@@ -1,6 +1,7 @@
 #importar la libreria faker
 from faker import Faker
 faker= Faker("es_MX")
+#python3 -m pip install Faker
 
 print("Generando datos Dummy con Faker")
 

@@ -10,5 +10,5 @@ for _ in range(5):
 
 #3. Escritura de arreglos (Mostrar resultados)
 print("\n--- DATASET DE CIUDADES GENERADO ---")
-for i in range(len(ciudades_la)):
+for i in range(len(ciudades_ia)):
     print(f"Registro {i+1}: {ciudades_ia[i]}")
