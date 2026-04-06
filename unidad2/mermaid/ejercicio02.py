@@ -1,7 +1,9 @@
 """
 Implementar en Python el algoritmo para calcular el Factorial de un número 
 siguiendo estrictamente la lógica definida en el Diagrama de Flujo proporcionado.
+Se usan diferentes estructuras de control (elementos) como variables, while, contador y condicion.
 """
+
 
 def factorial(n):
     input_num = n
@@ -20,4 +22,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
     
