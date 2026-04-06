@@ -2,6 +2,7 @@
 Diseñar un algoritmo que calcule la suma de 
 todos los números enteros del 1 al 100 que son
 divisbles por 3 y, además, impares.
+Se usan diferente estructuras de control (elementos) como variables, while y contador.
 """
 
 def es_divisible():
