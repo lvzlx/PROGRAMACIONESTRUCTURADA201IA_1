@@ -1,4 +1,8 @@
-#implementar en python una simulación de un fondo de ahorro. El usuario realiza depósitos mensuales de forma sucesiva hasta que la suma total iguala o supera una meta económica preestablecida de $1,000.
+"""
+implementar en python una simulacion de un fondo de ahorro. 
+El usuario realiza depositos mensuales de forma sucesiva hasta que la suma total iguala 
+o supera una meta economica preestablecida de $1,000.
+"""
 
 def fondo_ahorro():
     
