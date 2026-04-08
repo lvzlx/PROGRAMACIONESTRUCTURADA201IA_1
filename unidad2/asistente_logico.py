@@ -8,6 +8,7 @@ nombre_asistente = "quikin"
 en esta funcion se llevan a cabo todas las estructuras condicionales 
 con el proposito de identificar la intencion del usuario.
 """
+
 def ejecutar_asistente():
     #mensaje de bienvenida
     print(f"te doy la bienvenida, soy {nombre_asistente}, tu asistente y estoy listo para ayudarte.")
