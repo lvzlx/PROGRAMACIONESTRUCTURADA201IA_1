@@ -18,7 +18,7 @@ def ejecutar_asistente():
 
     #clasificacion de intencion
     if "hola" in frase or "buenos días" in frase:
-        print("¡Holi! Soy tu asistente, es un gusto saludarte.")
+        print("¡Hola! Soy tu asistente, es un gusto saludarte.")
 
     elif "clima" in frase or "temperatura" in frase:
         print("consultando el servicio meteorologico... hoy en Xalapa tendremos un día nublado.")
@@ -34,9 +34,9 @@ def ejecutar_asistente():
     print(f"proceso finalizado, gracias tiline por usar {nombre_asistente}.")
 
 
+
 def main():
     ejecutar_asistente()
-
 
 if __name__ == "__main__":
     main()
