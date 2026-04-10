@@ -1,0 +1,27 @@
+# programa para clasificar objetos en categorias por su tamaño
+
+import math
+
+def clasificar_objeto():
+    umbral_pequeno = 5
+    umbral_grande = 20
+    
+    dimension = float(input("Ingrese el tamaño del objeto: "))
+    
+    if dimension <= 0.0:
+        print("Error: Lectura inválida. Verifique el sensor.")
+    elif dimension < umbral_pequeno:
+        print("Clasificación: Micro-componente (Grado A)")
+    elif dimension  > umbral_pequeno and dimension <= umbral_grande:
+        print("Clasificación: Componente Estándar (Grado B)")
+    elif dimension > umbral_grande:
+        print("Clasificación: Componente Grande (Grado C)")
+        
+    if dimension > umbral_grande:
+        print(f"Espacio requerido en contenedor: {math.pow(dimension, 3)} cm3.")
+
+def main():
+    clasificar_objeto()
+
+if __name__ == "__main__":
+    main()
