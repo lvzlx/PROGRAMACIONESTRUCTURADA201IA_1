@@ -3,6 +3,15 @@
 UMBRAL_ALTO = 0.7
 UMBRAL_BAJO = 0.3
 
+"""
+la función clasificador_pixeles ya es bastante clara, sin embargo podría
+hacerse un poco más eficiente y compacta eliminando comparaciones
+redundantes y usando una estructura de decisiones encadenadas (if/elif/else).
+Por ejemplo, no es necesario repetir rangos completos como 0.0 <= intensidad < UMBRAL_BAJO si 
+ya validaste antes que el valor está dentro de [0,1], también se podría ordenar
+las condiciones de menor a mayor y dejar un else final para el último caso, esto reduciría líneas 
+y evaluaciones innecesarias
+"""
 def clasificador_pixeles(intensidad):
 
     if intensidad < 0.0 or intensidad > 1.0:
@@ -58,4 +67,3 @@ def main():
 
 if __name__ == "__main__":  
     main()
-    
