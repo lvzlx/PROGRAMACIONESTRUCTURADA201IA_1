@@ -59,9 +59,9 @@ def generar_reporte(total_datos, validos, estadisticas):
 	print(f"Total de lecturas prcesadas: {total_datos}")
 	print(f"Lecturas válidas: {validos}")
 	print(f"Lecturas descartadas: {descartados}")
-	print(f"Valor máximo: {v_max}")
-	print(f"Valor mínimo: {v_min}")
-	print(f"Promedio: {promedio}")
+	print(f"Valor máximo: {v_max:.2f}")
+	print(f"Valor mínimo: {v_min:.2f}")
+	print(f"Promedio: {promedio:.2f}")
 	print("*" * 30)
 # IMPLEMENTAR AQUÍ
 pass
