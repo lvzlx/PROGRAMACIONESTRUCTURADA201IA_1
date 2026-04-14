@@ -50,6 +50,19 @@ def generar_reporte(total_datos, validos, estadisticas):
 	"""
 	FUNCIÓN 4: Imprime un resumen formateado de los resultados.
 	"""
+	v_max, v_min, promedio = estadisticas
+	descartados = total_datos - validos
+	
+	print("*" * 30)
+	print("REPORTE DE ANILISIS PREDECTIVO")
+	print("*" * 30)
+	print(f"Total de lecturas prcesadas: {total_datos}")
+	print(f"Lecturas válidas: {validos}")
+	print(f"Lecturas descartadas: {descartados}")
+	print(f"Valor máximo: {v_max}")
+	print(f"Valor mínimo: {v_min}")
+	print(f"Promedio: {promedio}")
+	print("*" * 30)
 # IMPLEMENTAR AQUÍ
 pass
 # --- LÓGICA PRINCIPAL (NO MODIFICAR ESTA PARTE) ---
