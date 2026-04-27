@@ -10,13 +10,24 @@ def procesar_pregunta(mensaje_usuario):
     conocimientos = {
     #conceptos de estructura de control
         "if": "La sentencia if es un condicional. permite que el programa tome decisiones basandose en una condicion boolenana",
-    
+        "for": "El bucle for se utiliza para iterar sobre una secuencia (como una lista, tupla, o cadena) o cualquier objeto iterable. Permite ejecutar un bloque de codigo varias veces, una por cada elemento en la secuencia",
+        "while": "El bucle while se utiliza para ejecutar un bloque de codigo mientras una condicion sea verdadera. Es util cuando no se sabe de antemano cuantas veces se repetira el bloque de codigo",   
+        
     #Tipos de datos
         "int": "Representa numeros enteros, como 1, 2, 3, no tiene parte decimal",
+        "float": "Representa numeros con parte decimal, como 3.14 o 2.0",
+        "str": "Representa cadenas de texto, como 'Hola' o 'Python'",
     #Funciones y modularidad
         "def": "Es la palabra reservada para definir una funcion en python",
-    #operadores y sintaxis
         "print": "Es una funcion incorporada en python que se utiliza para mostrar informacion en la consola",
+        "return": "Es la forma en que la función te entrega el resultado de su trabajo.",
+        
+    #Conceptos de programacion estructurada
+        "programacion estructurada": "Es un paradigma de programacion que se basa en la division del programa en bloques o modulos, utilizando estructuras de control como if, for, while, y funciones para organizar el codigo de manera clara y facil de entender"
+        "Secuencia: Las instrucciones se ejecutan una tras otra en el orden en que aparecen"
+        "Selección (Estructuras condicionales): Permite elegir entre dos o más caminos dependiendo de una condición"
+        "Iteración (Bucles): Permite repetir un bloque de código mientras se cumpla una condición o para cada elemento en una colección"
+        
     }
     #3.- Logica de busqueda
     for clave in conocimientos:
