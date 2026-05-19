@@ -36,3 +36,8 @@ def main():
 
 if __name__ == "__main__":
    main()
+
+"""
+Al utilizar np.mean() sin haber importado numpy comoi libreria 
+dara error porque python no lo identifica 
+"""
