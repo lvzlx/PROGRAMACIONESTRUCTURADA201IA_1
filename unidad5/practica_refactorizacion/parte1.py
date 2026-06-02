@@ -64,6 +64,15 @@ def obtener_saludo_agente():
     elif opcion == 4:
         return "Hola humano, procesando tus peticiones."
 
+def obtener_saludo_agente_refactorizado():
+    saludos = [
+        "Hola, soy el agente de IA. ¿En qué ayudo?",
+        "¡Conexión establecida! Listo para operar.",
+        "Sistemas en línea. Monitoreando el servidor.",
+        "Hola humano, procesando tus peticiones."
+    ]
+    return random.choice(saludos)
+
 # =====================================================================
 # RETO 4: Clasificador de Alertas Críticas (Validación de Rangos)
 # Sentido: Evaluar si el error (Loss) de la IA requiere apagar el sistema.
@@ -94,4 +103,5 @@ if __name__ == "__main__":
     print("Distancia calculada refactorizada:", calcular_distancia_refactorizado(0, 0, 3, 4))
     print("Distancia calculada refactorizada v2:", calcular_distancia_refactorizado_v2(0, 0, 3, 4))
     print("Respuesta bot:", obtener_saludo_agente())
+    print("Respuesta bot refactorizada:", obtener_saludo_agente_refactorizado())
     print("Estado del log:", evaluar_error_sistema(0.85))
