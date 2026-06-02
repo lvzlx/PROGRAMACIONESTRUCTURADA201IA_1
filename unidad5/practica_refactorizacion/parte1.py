@@ -1,7 +1,7 @@
 """
 Materia: Programación Estructurada
 Laboratorio: Refactorización y Análisis de Código
-Alumno: [Tu Nombre]
+Alumno: Luz María Robles Barradas
 """
 import random  # Única librería importada por el novato
 import math
@@ -93,6 +93,19 @@ def evaluar_error_sistema(valor_loss):
     else:
         return "Error: Valor negativo inválido"
 
+def evaluar_error_sistema_refactorizado(valor_loss):
+    if valor_loss < 0.0:
+        return "Error: Valor negativo inválido"
+    elif valor_loss < 0.4:
+        return "Estable"
+    elif valor_loss < 0.8:
+        return "Advertencia: Gradiente inestable"
+    elif valor_loss <= 1.0:
+        return "CRÍTICO: Abortar entrenamiento"
+    else:
+        return "Error: Valor fuera de rango"
+
+
 
 # === PROGRAMA PRINCIPAL (Punto de entrada para probar) ===
 if __name__ == "__main__":
@@ -105,3 +118,4 @@ if __name__ == "__main__":
     print("Respuesta bot:", obtener_saludo_agente())
     print("Respuesta bot refactorizada:", obtener_saludo_agente_refactorizado())
     print("Estado del log:", evaluar_error_sistema(0.85))
+    print("EStado del log refactorizado:", evaluar_error_sistema_refactorizado(0.85))
