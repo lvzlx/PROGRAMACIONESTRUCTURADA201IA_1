@@ -4,7 +4,7 @@ Laboratorio: Refactorización y Análisis de Código
 Alumno: Luz María Robles Barradas
 """
 import random  # Única librería importada por el novato
-import math
+import math #Se importa otra libreria para refactorizar las funciones 
 # =====================================================================
 # RETO 1: El Teorema de Fermat
 # Sentido: Validar la famosa conjetura matemática.
@@ -18,7 +18,7 @@ def verificar_fermat(a, b, c):
         else:
             print("No, esa combinación no funciona.")
 
-def verificar_fermat_refactorizado(a, b, c, n):
+def verificar_fermat_refactorizado(a, b, c, n): 
     if n > 2:
         if math.pow(a, n) + math.pow(b, n) == math.pow(c, n):
             print("¡Fermat se equivocó!")
